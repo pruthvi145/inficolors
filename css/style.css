@@ -1138,6 +1138,9 @@ ul.offers-list {
 	color: #f15b26;
 }
 
+.offers-thumb img{
+	width: 100%;
+}
 .our-video {
 	background-color: #fff;
 }
