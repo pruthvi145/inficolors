@@ -1009,11 +1009,17 @@ span.infi:hover {
 
 .seo-score {
 	background-color: #2f2c2c;
-	padding: 130px 0 200px;
+	padding: 130px 30px 200px;
 	position: relative;
 	text-align: center;
 	overflow: hidden;
 	z-index: 1;
+}
+
+@media (max-width: 768PX) {
+	.seo-score-form input {
+		border-radius: 50px;
+	}
 }
 
 .seo-score-title {
@@ -1295,26 +1301,53 @@ ul.offers-list {
 	overflow: hidden;
 }
 
+.subscribe-form {
+	display: flex;
+	align-items: flex-start;
+}
+
 .subscribe-email {
 	background-color: #fff;
 	padding: 16px 40px;
 	font-size: 16px;
 	color: #797676;
 	width: 70%;
+	z-index: 20;
 	border-radius: 50px 0 0 50px;
-	float: left;
+}
+
+@media (max-width: 360px) {
+	.subscribe-email {
+		width: 100%;
+		margin-bottom: 20px;
+		border-radius: 50px;
+	}
 }
 
 .subscribe-form .btn {
-	display: inline-block;
 	padding: 18px 40px;
 	border-radius: 0 50px 50px 0;
 	font-size: 15px;
 	width: 30%;
+	z-index: 20;
 	cursor: pointer;
 	position: relative;
 	color: #fff;
 	text-align: center
+}
+
+@media (max-width: 1024px) {
+	.subscribe-form .btn {
+		padding: 18px 6px;
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 492px) {
+	.subscribe-form .btn {
+		padding: 20px 6px;
+		font-size: 10px;
+	}
 }
 
 .subscribe-title {
@@ -1326,6 +1359,10 @@ ul.offers-list {
 .subscribe .sub-title {
 	float: left;
 	color: rgba(255, 255, 255, .5);
+}
+
+.images-block {
+	z-index: 10;
 }
 
 .subscribe img {
@@ -1347,6 +1384,47 @@ ul.offers-list {
 	bottom: -50px;
 }
 
+@media (max-width: 1024px) {
+	.subscribe .images-block img.mail {
+		width: 40%;
+	}
+}
+
+@media (max-width: 768px) {
+	.subscribe {
+		height: 400px;
+	}
+
+	.subscribe .images-block img.mail {
+		width: 35%;
+		top: 250px;
+	}
+}
+
+@media (max-width: 640px) {
+	.subscribe {
+		height: 380px;
+	}
+
+	.subscribe .images-block img.mail {
+		top: 280px;
+		width: 40%;
+
+	}
+}
+
+@media (max-width: 360px) {
+	.subscribe .images-block {
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	.subscribe .images-block img.gear {
+		top: 10px;
+	}
+}
+
 /*--Footer--*/
 
 .footer {
@@ -1355,7 +1433,6 @@ ul.offers-list {
 }
 
 .mega-footer {
-
 	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 	display: table;
 	padding-bottom: 110px;
@@ -1429,18 +1506,16 @@ ul.offers-list {
 
 .footer-credit {
 	background: #121111;
-	padding: 40px 0;
+	padding: 40px 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .footer-credit p {
 	font-size: 15px;
 	margin: 15px 0;
 	color: #504d4e;
-	display: inline-block;
-}
-
-.footer-credit > p + p {
-	margin-left: 110px;
 }
 
 .footer-credit a {
@@ -1493,6 +1568,13 @@ ul.offers-list {
 
 .mega-heading span {
 	text-decoration: underline;
+}
+
+@media(max-width: 480px) {
+	.footer-contacts {
+		//transform: scale(.6);
+		//text-align: center;
+	}
 }
 
 /*--lightbox--*/
