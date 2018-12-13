@@ -574,6 +574,7 @@ span.infi:hover {
 .p-menu-menu > li:hover > i {
 	color: #4cc2c0;
 }
+
 /*--Right Menu--*/
 
 .right-menu {
@@ -821,6 +822,7 @@ span.infi:hover {
 		transform: scale(0);
 	}
 }
+
 .info-menu-btn-close {
 	width: 70px;
 	height: 70px;
@@ -1138,9 +1140,33 @@ ul.offers-list {
 	color: #f15b26;
 }
 
-.offers-thumb img{
+.offers-thumb img {
 	width: 100%;
 }
+
+@media(max-width: 1200px){
+	.offers-thumb img{
+		margin-top: 50px;
+	}
+}
+
+@media(max-width:480px){
+	.offers .btn{
+		margin: 0;
+		margin-bottom: 50px;
+	}
+	.offers-btns{
+		text-align: center;
+	}	
+	.header{
+		padding: 15px 0px;
+	}
+	
+	.header .logo{
+		transform: scale(.8);
+	}
+}
+
 .our-video {
 	background-color: #fff;
 }
