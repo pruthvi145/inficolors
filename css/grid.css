@@ -327,7 +327,7 @@
     }
 }
 
-@media (min-width: 800px) and (max-width: 1190px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
 
     .col-md-1,
     .col-md-2,
@@ -549,7 +549,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
 
     .col-sm-1,
     .col-sm-2,

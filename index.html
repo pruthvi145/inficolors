@@ -3,18 +3,18 @@
 
 <head>
 	<title>Inficolors - A digital marketintg agency</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/logo-eye.png" width="16px" height="16px">
 	<!--Fonts-->
 	<link type="text/css" rel="stylesheet" href="css/fonts.css">
 	<link type="text/css" rel="stylesheet" href="css/icon-fonts.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 
 	<!--styles-->
 	<link type="text/css" rel="stylesheet" href="css/grid.css">
 
 	<!--custom style-->
-	<link type="text/css" rel="stylesheet" href="css/default.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
-	<link type="text/css" rel="stylesheet" href="css/header.css">
 </head>
 
 <body id="body">
@@ -64,93 +64,58 @@
 		</div>
 	</div>
 	<header class="header" id="header">
-		<div class="container">
-			<div class="logo">
-				<img src="img/logo-eye.png" alt="logo">
-				<a class="logo-text">
-					<div class="logo-title">inficolors</div>
-					<div class="logo-sub-title"> A Digital Marketing Agency</div>
-				</a>
-			</div>
-			<nav class="p-menu">
-				<ul class="p-menu-menu">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="#services">Services</a>
-						<ul class="dropdown">
-							<li class="menu-info">
-								<h5 class="menu-info-title">List of Services</h5>
-								<p class="menu-info-sub-title">Choose service</p>
-							</li>
-							<li class="hover">
-								<a href="#services">
-									<i class="seoicon-pin-map"></i>
-									Local SEO
-								</a>
-							</li>
-							<li class="hover">
-								<a href="#services">
-									<i class="seoicon-mail-send"></i>
-									Email Marketing
-								</a>
-							</li>
-							<li class="hover">
-								<a href="#services">
-									<i class="seoicon-chat-comment"></i>
-									Social Media Marketing
-								</a>
-							</li>
-							<li class="hover">
-								<a href="#services">
-									<i class="seoicon-search"></i>
-									Search Engine Optimization
-								</a>
-							</li>
-							<li class="hover">
-								<a href="#services">
-									<i class="seoicon-button"></i>
-									Pay Per Click Management
-								</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="#about-us">About Us</a>
-					</li>
-					<li>
-						<a class="open-lightbox" id="open-lightbox">Contact Us</a>
-					</li>
-				</ul>
-			</nav>
-			<ul class="right-menu">
-				<li class="cart">
-					<a href="#" class="js-cart-popoup">
-						<i class="seoicon-basket"></i>
-						<span class="cart-count">0</span>
-					</a>
-
-					<div class="cart-popup">
-						<h5 class="cart-popup-title">No product in the cart!</h5>
-						<p class="cart-popup-sub-title">Please make your choice.</p>
-
-						<a href="#" class="cart-popup-btn">shop now!</a>
-					</div>
+		<div class="logo">
+			<img src="img/logo-eye.png" alt="logo">
+			<a class="logo-text">
+				<div class="logo-title">inficolors</div>
+				<div class="logo-sub-title"> A Digital Marketing Agency</div>
+			</a>
+		</div>
+		<nav class="p-menu" id="menu">
+			<ul class="p-menu-menu">
+				<li>
+					<a href="index.html">Home</a>
 				</li>
-				<li class="search">
-					<a href="#">
-						<i class="seoicon-loupe"></i>
-					</a>
+				<li>
+					<a href="#services">Services</a>
+				</li>
+				<li>
+					<a href="#about-us">About Us</a>
+				</li>
+				<li>
+					<a class="open-lightbox" id="open-lightbox">Contact Us</a>
 				</li>
 			</ul>
-			<div class="info-menu-btn js-info-menu-btn">
-				<a href="#" class="info-menu-btn-bg">
-					<span></span>
-					<span></span>
-					<span></span>
+		</nav>
+		<ul class="right-menu">
+			<li class="cart">
+				<a href="#" class="js-cart-popoup">
+					<i class="seoicon-basket"></i>
+					<span class="cart-count">0</span>
 				</a>
-			</div>
+
+				<div class="cart-popup">
+					<h5 class="cart-popup-title">No product in the cart!</h5>
+					<p class="cart-popup-sub-title">Please make your choice.</p>
+
+					<a href="#" class="cart-popup-btn">shop now!</a>
+				</div>
+			</li>
+			<li class="search">
+				<a href="#">
+					<i class="seoicon-loupe"></i>
+				</a>
+			</li>
+		</ul>
+		<div class="menu-icon" id="menu-icon">
+			<i class="fas fa-bars"></i>
+		</div>
+		<div class="info-menu-btn js-info-menu-btn">
+			<a href="#" class="info-menu-btn-bg">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
 		</div>
 	</header>
 
@@ -269,47 +234,45 @@
 	<div class="main-slider">
 		<div class="overlay"></div>
 	</div>
-	<div class="info-box" id="services">
+	<div class="info-boxs" id="services">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
 					<img src="img/info-box1.png" alt="image" class="info-box-image">
 					<div class="info-box-content">
 						<h5 class="info-box-title">Local SEO</h5>
 						<p class="info-box-text">Get Top Positions for your required key-phrases and start getting business/queries and increase your product sales.</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
 					<img src="img/info-box2.png" alt="image" class="info-box-image">
 					<div class="info-box-content">
 						<h5 class="info-box-title">Social Media Marketing</h5>
 						<p class="info-box-text">Creating a hype produced through an incredible number of users is unique to any other kind of advertising.</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
 					<img src="img/info-box3.png" alt="image" class="info-box-image">
 					<div class="info-box-content">
 						<h5 class="info-box-title">Pay Per Click (PPC)</h5>
 						<p class="info-box-text">we make an effort to take this performance even further by providing Pay per click management services.</p>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
 					<img src="img/info-box4.png" alt="image" class="info-box-image">
 					<div class="info-box-content">
 						<h5 class="info-box-title">Website Design</h5>
 						<p class="info-box-text">inficolors is a major quality web solution company for business, Organization, Individual &amp; professional etc . </p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
 					<img src="img/info-box5.png" alt="image" class="info-box-image">
 					<div class="info-box-content">
 						<h5 class="info-box-title">Custom Email Design</h5>
 						<p class="info-box-text">Send great-looking emails. Connect with more customers, Constant Contact makes powerful email marketing easy.</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
 					<img src="img/info-box6.png" alt="image" class="info-box-image">
 					<div class="info-box-content">
 						<h5 class="info-box-title">Email Marketing</h5>

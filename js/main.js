@@ -1,23 +1,3 @@
-/*--Pre Loading--*/
-/*window.onload = function () {
-	preLoading()
-}
-var myVar;
-var myVar2;
-
-function preLoading() {
-	myVar = setTimeout(showPage, 9000);
-	myVar2 = setTimeout(showPage2, 6000);
-}
-
-function showPage() {
-	document.getElementById("preloader").style.display = "none";
-
-}
-
-function showPage2() {
-	document.getElementById("after-preloading").style.display = "block";
-}*/
 /*--Sticky header--*/
 window.onscroll = function () {
 	stickyHeader();
@@ -26,12 +6,10 @@ window.onscroll = function () {
 
 var header = document.getElementById("header");
 var headerOffset = header.offsetTop;
-var preLoader = document.getElementById("preloader");
 var prescrollpos = window.pageYOffset;
 
 function stickyHeader() {
-	var curscrollpos = window.pageYOffset;
-	if (window.pageYOffset <= 70) {
+	if (window.pageYOffset <= headerOffset) {
 		header.classList.remove("header-sticky");
 	} else {
 		header.classList.add("header-sticky");
@@ -96,26 +74,19 @@ function formValidation() {
 		alert("Please enter your name.");
 		uname.focus();
 		return false;
-	}
-
-	else if (email.value == "") {
+	} else if (email.value == "") {
 		alert("Please enter your email address.");
 		email.focus();
 		return false;
-	}
-
-	else if (phn.value == "") {
+	} else if (phn.value == "") {
 		alert("Please enter a Phone.");
 		phn.focus();
 		return false;
-	}
-	else if (email.value.indexOf("@", 0) < 0) {
+	} else if (email.value.indexOf("@", 0) < 0) {
 		alert("Please enter a valid e-mail address.");
 		email.focus();
 		return false;
-	}
-
-	else if (phn.value.length != 10) {
+	} else if (phn.value.length != 10) {
 		alert("Please enter a valid Phone Number.");
 		phn.focus();
 		return false;
@@ -130,6 +101,7 @@ function formValidation() {
 var lightboxContent = document.getElementById("js-content-open");
 var afterMssge = document.getElementsByClassName("after-mssge");
 var showName = document.getElementById("amname");
+
 function showMssge() {
 	showName.innerHTML = "Hello! " + uname.value + ",";
 	afterMssge[0].classList.add("show-after-mssge");
@@ -142,3 +114,14 @@ function resetLightbox() {
 	lightboxContent.style.opacity = "1";
 	form.reset();
 }
+
+var menuIcon = document.getElementById("menu-icon");
+var menu = document.getElementById("menu");
+
+menuIcon.addEventListener("click", function () {
+	if (menu.style.display == "none") {
+		menu.style.display = "block";
+	} else {
+		menu.style.display = "none";
+	}
+});
