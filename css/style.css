@@ -12,7 +12,6 @@ html {
 
 body {
 	position: relative;
-	//background: #151414;
 	color: #acacac;
 	font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, serif;
 	padding: 0;
@@ -510,7 +509,7 @@ span.infi:hover {
 	text-transform: uppercase;
 }
 
-/*Primary-Menu*/
+/*Primary-Menu**/
 .p-menu {
 	padding: 14px 30px;
 }
